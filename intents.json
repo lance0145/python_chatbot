@@ -1,43 +1,52 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "hey"],
-         "responses": ["Hello! Good to see you!", "Hi there, how can I help?", "Hey genius, what's up?"],
-         "context_set": ""
-        },
-        {"tag": "goodbye",
-         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
-         "responses": ["See you soon pal...", "Goodbye! Have a nice day."],
-         "context_set": ""
-        },
-        {"tag": "booking",
-         "patterns": ["book room", "do you have any rooms?", "room reservation", "I want to book room"],
-         "responses": ["Do you want a single room or multiple rooms?"],
-         "context_set": "rooms_num"
-        },
-        {"tag": "one_room",
-         "patterns": ["single room", "one room", "1 room"],
-         "responses": ["Okay, we got you covered for 1 room!"],
-         "context_filter": "rooms_num"
-        },
-        {"tag": "multiple_rooms",
-         "patterns": ["many", "multiple rooms", "more than 1 rooms"],
-         "responses": ["Okay, please visit our website and book multiple rooms!"],
-         "context_filter": "rooms_num"
-        },
-        {"tag": "name",
-         "patterns": ["what's the name of the hotel?", "does hotel have a name?", "what should I call that place?"],
-         "responses": ["'Hotel Pacific': The paradise of wonderland...", "It's called as 'Hotel Pacific'!"],
-         "context_set": ""
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Love you 3000!", "My pleasure!"],
-         "context_set": ""
-        },
-        {"tag": "address",
-         "patterns": ["address", "Where is this place?", "where to find hotel?", "Give me location", "what is the address?"],
-         "responses": ["Our hotel is located at 'Malibu Point 10880, 90265' :)"],
-         "context_set": ""
-        }
-   ]
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "hey"],
+      "responses": ["Ahoy! Welcome aboard!", "Hello sailor, how can I assist you today?", "Hi there, ready to cruise?"],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye"],
+      "responses": ["Safe travels, sailor!", "Goodbye! Hope to see you on deck again soon."],
+      "context_set": ""
+    },
+    {
+      "tag": "booking",
+      "patterns": ["book cabin", "do you have any cabins?", "cabin reservation", "I want to book a cruise"],
+      "responses": ["Would you like a single cabin or multiple cabins?"],
+      "context_set": "cabins_num"
+    },
+    {
+      "tag": "one_cabin",
+      "patterns": ["single cabin", "one cabin", "1 cabin"],
+      "responses": ["Perfect, we’ve reserved 1 cozy cabin just for you!"],
+      "context_filter": "cabins_num"
+    },
+    {
+      "tag": "multiple_cabins",
+      "patterns": ["many", "multiple cabins", "more than 1 cabin"],
+      "responses": ["Alright! Please visit our website to book multiple cabins for your crew!"],
+      "context_filter": "cabins_num"
+    },
+    {
+      "tag": "name",
+      "patterns": ["what's the name of the cruise?", "does the ship have a name?", "what should I call that cruise?"],
+      "responses": ["Welcome aboard the 'Cruise Pacific' – your gateway to adventure!", "It's proudly called the 'Cruise Pacific'!"],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Aye aye! Happy to help!", "You’re welcome, captain!", "Smooth sailing ahead!"],
+      "context_set": ""
+    },
+    {
+      "tag": "address",
+      "patterns": ["address", "Where is this ship docked?", "where to find cruise?", "Give me location", "what is the port address?"],
+      "responses": ["We’re docked at Port Malibu, Dock 10880 – come aboard!"],
+      "context_set": ""
+    }
+  ]
 }
